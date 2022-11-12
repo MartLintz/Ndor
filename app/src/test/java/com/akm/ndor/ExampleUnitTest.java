@@ -1,4 +1,4 @@
-package com.arjuna.ndor;
+package com.akm.ndor;
 
 import org.junit.Test;
 

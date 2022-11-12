@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "295420545578",
+    "firebase_url": "https://srog-aruig-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "srog-aruig",
+    "storage_bucket": "srog-aruig.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295420545578:android:e4909c69a9eb0d51671153",
+        "android_client_info": {
+          "package_name": "com.akm.ndor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295420545578-m70c6p9vi3urnod0v74mtr8v2vfd4g0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuirFCuPCZfeMvHmbeRFMba8x4riC3tbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295420545578-m70c6p9vi3urnod0v74mtr8v2vfd4g0k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
