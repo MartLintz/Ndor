@@ -1,0 +1,38 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ 'main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    name: Build debug apk
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3.6.0
+        with:
+          java-version: '17'
+          distribution: 'adopt'
+          cache: gradle
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build debug apk
+        uses: eskatos/gradle-command-action@v2
+        with:
+          arguments: assembleDebug
+
+      - name: Upload debug apk
+        uses: actions/upload-artifact@v3
+        with:
+          name: ndor-debug
+          path: app/build/outputs/apk/debug/
